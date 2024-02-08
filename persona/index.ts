@@ -1,0 +1,17 @@
+import { Persona } from './clasePersona';
+
+let persona1 = new Persona('yesica', 23, 3126, 'calle 5', 'popayan')
+let persona2 = new Persona('OLiver', 35, 3126, 'calle 5', 'popayan')
+let persona3 = new Persona('Ruber', 21, 3126, 'calle 5', 'Cali')
+let persona4 = new Persona('Jhojan', 9, 3126, 'calle 5', 'medellin')
+let persona5 = new Persona('clara', 17, 3126, 'calle 5', 'Bogota')
+console.log(persona1.mostrarDatos()) 
+console.log(persona1.Edad(persona1.getEdad()))
+console.log(persona2.mostrarDatos())
+console.log(persona2.Edad(persona2.getEdad()))
+console.log(persona3.mostrarDatos())
+console.log(persona3.Edad(persona3.getEdad()))
+console.log(persona4.mostrarDatos())
+console.log(persona4.Edad(persona4.getEdad()))
+console.log(persona5.mostrarDatos())
+console.log(persona5.Edad(persona5.getEdad()))
