@@ -26,13 +26,13 @@ this.valorActual=valorActual
 
     }
 
-    ingresarValor(){
-       (valorIngresado>=0)?  this.valorActual+valorIngresado : 'no es valido el valor'
+    ingresarValor(valorIngresado:number){
+        return (valorIngresado >= 0) ? `se ha ingresado a la cuenta ${this.valorActual+valorIngresado}  ` : 'no es valido el valor'
     }
-    retirarValor(){
-(valorRetirado<=this.valorActual)
-?
- ` valor inial de la cuenta ${this.valorActual} se retiro ${this.setValorActual} total de la cuenta ${this.valorActual-valorRetirado}`
- : `el valor supera la cantidad que hay en la cuenta`
+    retirarValor(valorRetirado: number) {
+        return (valorRetirado<=this.valorActual)
+        ?
+        ` valor inicial de la cuenta ${this.valorActual} se retiro ${valorRetirado} total de la cuenta ${this.valorActual-valorRetirado}`
+        : `el valor supera la cantidad que hay en la cuenta`
     }
 }
